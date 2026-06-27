@@ -739,6 +739,11 @@
           <div class="contact-form-column glass scroll-reveal">
             <h3>Send Message</h3>
             <form id="contact-form" class="contact-form" novalidate>
+              <!-- Web3Forms Access Key - Replace with your actual key from web3forms.com -->
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+              <!-- Honeypot Spam Protection -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
               <div class="form-group">
                 <input type="text" id="name" name="name" class="form-control" required placeholder=" ">
                 <label for="name" class="form-label">Full Name</label>

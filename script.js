@@ -314,7 +314,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (isValid) {
-        // Mocking successful email submission with loader button animation
         const submitBtn = contactForm.querySelector('.btn-submit');
         const submitBtnText = submitBtn.querySelector('span');
         const submitBtnIcon = submitBtn.querySelector('i');
@@ -323,24 +322,43 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.disabled = true;
         submitBtnText.textContent = 'Sending Message...';
         submitBtnIcon.className = 'fa-solid fa-spinner fa-spin';
+
+        // Collect form data
+        const formData = new FormData(contactForm);
         
-        setTimeout(() => {
-          // Success Response State
-          formStatus.className = 'form-status success';
-          statusTitle.textContent = 'Message Transmitted Successfully!';
-          statusDesc.textContent = 'Thank you for reaching out. Abdul Mannan Mahadi will respond shortly.';
-          
-          // Reset Form
-          contactForm.reset();
-          
-          // Reset Button
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            // Success Response State
+            formStatus.className = 'form-status success';
+            statusTitle.textContent = 'Message Transmitted Successfully!';
+            statusDesc.textContent = 'Thank you for reaching out. Abdul Mannan Mahadi will respond shortly.';
+            contactForm.reset();
+          } else {
+            // Error Response State
+            formStatus.className = 'form-status error';
+            statusTitle.textContent = 'Transmission Error';
+            statusDesc.textContent = json.message || 'Something went wrong. Please try again later.';
+          }
+        })
+        .catch(error => {
+          console.error(error);
+          formStatus.className = 'form-status error';
+          statusTitle.textContent = 'Transmission Error';
+          statusDesc.textContent = 'Network error. Please check your connection and try again.';
+        })
+        .then(() => {
+          // Reset Button State
           submitBtn.disabled = false;
           submitBtnText.textContent = 'Send Message';
           submitBtnIcon.className = 'fa-solid fa-paper-plane';
-          
           // Smooth scroll to status message
           formStatus.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }, 1500);
+        });
       } else {
         // Show local error status
         formStatus.className = 'form-status error';
