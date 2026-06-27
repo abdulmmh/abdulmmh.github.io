@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (preloader) {
         preloader.classList.add('fade-out');
       }
+      document.documentElement.classList.remove('preloader-active');
+      document.body.classList.remove('preloader-active');
       // Trigger scroll reveals once loaded
       revealOnScroll();
     }, 1800); // Allow preloader animations to run cleanly
@@ -336,7 +338,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Success Response State
             formStatus.className = 'form-status success';
             statusTitle.textContent = 'Message Transmitted Successfully!';
-            statusDesc.textContent = 'Thank you for reaching out. Abdul Mannan Mahadi will respond shortly.';
+            statusDesc.textContent = 'Thank you for reaching out. Abdul Mannan Mahadi Hasan will respond shortly.';
             contactForm.reset();
           } else {
             // Error Response State

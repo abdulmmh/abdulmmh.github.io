@@ -1,5 +1,5 @@
 /* 
- * Style design system for Abdul Mannan Mahadi portfolio
+ * Style design system for Abdul Mannan Mahadi Hasan portfolio
  * Includes premium dark theme, glassmorphism, glowing custom accents,
  * responsive alignments, and custom transitions/animations.
  */
@@ -51,6 +51,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -60,6 +61,14 @@ body {
   color: var(--text-primary);
   overflow-x: hidden;
   line-height: 1.6;
+}
+
+/* Disable scrolling while preloader is active */
+html.preloader-active,
+body.preloader-active {
+  overflow: hidden !important;
+  height: 100% !important;
+  width: 100% !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1959,6 +1968,10 @@ textarea.form-control:not(:placeholder-shown) ~ .form-label {
     display: flex;
   }
   
+  .nav-actions .btn-cv-header {
+    display: none; /* Hide header CV button on mobile/tablet to prevent layout overflow */
+  }
+  
   .nav-menu {
     position: fixed;
     top: var(--header-height);
@@ -1972,10 +1985,12 @@ textarea.form-control:not(:placeholder-shown) ~ .form-label {
     gap: 2.5rem;
     transition: var(--transition-smooth);
     z-index: 999;
+    visibility: hidden; /* Hide menu geometry when closed to prevent horizontal page scrolling */
   }
   
   .nav-menu.open {
     right: 0;
+    visibility: visible;
   }
   
   /* Menu Hamburger Animation */
@@ -2027,10 +2042,6 @@ textarea.form-control:not(:placeholder-shown) ~ .form-label {
   
   .about-stats {
     grid-template-columns: 1fr;
-  }
-  
-  .nav-actions .btn-cv-header {
-    display: none; /* Hide download CV on very small viewport headers to prevent overflow */
   }
   
   .hero-actions {
