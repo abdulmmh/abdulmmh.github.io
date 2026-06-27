@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Mannan Mahadi | Full Stack Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Abdul Mannan Mahadi, Full Stack Developer specializing in Java, Spring Boot, Angular, Android, and Flutter. B.Sc. in Mathematics, building scalable enterprise web and mobile applications.">
+  <meta name="keywords" content="Abdul Mannan Mahadi, Full Stack Developer, Spring Boot, Angular, Flutter, Android Developer, Java Developer, Dhaka, Bangladesh, Software Engineer, Portfolio">
+  <meta name="author" content="Abdul Mannan Mahadi">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abdul Mannan Mahadi | Full Stack Developer">
+  <meta property="og:description" content="Analytical Full Stack Developer building enterprise-grade web and mobile applications with Java, Spring Boot, Angular, Android, and Flutter.">
+  <meta property="og:image" content="assets/profile.jpg?v=3">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Abdul Mannan Mahadi | Full Stack Developer">
+  <meta property="twitter:description" content="Analytical Full Stack Developer building enterprise-grade web and mobile applications with Java, Spring Boot, Angular, Android, and Flutter.">
+  <meta property="twitter:image" content="assets/profile.jpg?v=3">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="code-bracket">&lt;</span>
+        <span class="logo-text">AMM</span>
+        <span class="code-bracket">/&gt;</span>
+      </div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+      <span class="loader-status">Initializing environment...</span>
+    </div>
+  </div>
+
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#home" class="logo">
+        <span class="logo-accent">&lt;</span>Mahadi<span class="logo-accent">/&gt;</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#github" class="nav-link">GitHub</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="assets/cv-abdul-mannan-mahadi.pdf" class="btn-cv-header" download>
+          <i class="fa-solid fa-download"></i> CV
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="badge-recruiter">
+            <span class="badge-dot"></span>
+            <span>Available for Full-time Roles (2026 Grad)</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Abdul Mannan Mahadi</span>
+          </h1>
+          
+          <div class="typewriter-container">
+            <span class="static-txt">I am a </span>
+            <span class="dynamic-txt" id="typewriter"></span>
+          </div>
+          
+          <p class="hero-description">
+            Building scalable web and mobile applications with Java, Spring Boot, Angular, Android, and Flutter. Specializing in secure REST APIs, role-based workflows, and cross-platform experiences.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="assets/cv-abdul-mannan-mahadi.pdf" class="btn btn-secondary" download>
+              <i class="fa-solid fa-cloud-arrow-down"></i> <span>Download CV</span>
+            </a>
+            <a href="#contact" class="btn btn-tertiary">
+              <span>Contact Me</span>
+            </a>
+          </div>
+          
+          <div class="hero-socials">
+            <a href="https://github.com/abdulmmh" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mahadi-hasan-543baa38b/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:abdulmannanmahadi@gmail.com" class="social-link" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-blob">
+            <div class="profile-card-glass">
+              <img src="assets/profile.jpg?v=3" alt="Abdul Mannan Mahadi Profile Photo" class="profile-img">
+              <div class="profile-card-info">
+                <p class="profile-name">Abdul Mannan Mahadi</p>
+                <p class="profile-title">Full Stack Developer</p>
+                <div class="profile-status">
+                  <span class="pulse-indicator"></span>
+                  <span class="status-text">Active in Dhaka, BD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">About <span class="text-gradient">Me</span></h2>
+        <p class="section-subtitle text-center">Bridging mathematics and software engineering to construct optimized solutions</p>
+        
+        <div class="about-grid">
+          <div class="about-card glass">
+            <div class="card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+            <h3>My Journey</h3>
+            <p>
+              I am a Full Stack Developer with a Bachelor of Science (B.Sc.) in Mathematics from Chattogram College (National University). My academic background in mathematics deeply strengthened my analytical thinking, logical reasoning, and problem-solving abilities.
+            </p>
+            <p>
+              To pivot into professional software engineering, I completed the rigorous <strong>ISDB-BISEW IT Scholarship Programme (Round 68)</strong>, specializing in Web and Mobile App Development.
+            </p>
+          </div>
+          
+          <div class="about-card glass">
+            <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>What I Do</h3>
+            <p>
+              I enjoy building enterprise-grade applications, designing secure and performant REST APIs, developing cross-platform mobile apps, and solving challenging technical problems.
+            </p>
+            <p>
+              I focus on backend robustness using Java & Spring Boot, combined with responsive frontend web structures in Angular and smooth, native-feel mobile frontends using Android & Flutter.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Summary Cards -->
+        <div class="about-stats">
+          <div class="stat-card glass">
+            <span class="stat-num text-gradient">B.Sc.</span>
+            <span class="stat-label">Mathematics Graduate</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-num text-gradient">Round 68</span>
+            <span class="stat-label">ISDB-BISEW Scholar</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-num text-gradient">5+</span>
+            <span class="stat-label">Core Tech Stacks Stacked</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-num text-gradient">100%</span>
+            <span class="stat-label">Backend-to-Frontend Coverage</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Training Section -->
+    <section id="education" class="education section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">Education & <span class="text-gradient">Training</span></h2>
+        <p class="section-subtitle text-center">Rigorous academic foundation and intensive professional training</p>
+        
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item left scroll-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2018 - 2023</span>
+              <h3>Bachelor of Science (B.Sc.) in Mathematics</h3>
+              <h4 class="timeline-institution">Chattogram College (National University)</h4>
+              <p>
+                Acquired foundational training in advanced calculus, algebra, discrete mathematics, and numerical analysis. Leveraged mathematical modeling skills to analyze systems, refine logical flow, and write highly optimized algorithms.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item right scroll-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2024 - 2025</span>
+              <h3>Professional IT Scholarship Programme</h3>
+              <h4 class="timeline-institution">ISDB-BISEW (Round 68)</h4>
+              <p>
+                Completed an intensive, full-time professional diploma program specializing in Web & Mobile App Development. Gained deep practical training in Java, Spring Boot, Spring Security, MySQL, Angular, HTML5/CSS3/Bootstrap, native Android development (Java), and Flutter/Dart.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">Technical <span class="text-gradient">Skills</span></h2>
+        <p class="section-subtitle text-center">My tech stack spanning backend, frontend web, mobile apps, databases, and development utilities</p>
+        
+        <div class="skills-grid">
+          <!-- Backend Skills -->
+          <div class="skill-category glass scroll-reveal">
+            <div class="category-header">
+              <i class="fa-solid fa-server"></i>
+              <h3>Backend Engineering</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Java / Spring Boot</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-teal" data-progress="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Spring Security & JWT</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-teal" data-progress="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>RESTful API Design</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-teal" data-progress="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Maven / Dependency Management</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-teal" data-progress="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend Skills -->
+          <div class="skill-category glass scroll-reveal">
+            <div class="category-header">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h3>Frontend Web</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Angular & TypeScript</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-violet" data-progress="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>HTML5 & CSS3</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-violet" data-progress="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Bootstrap / Responsive Layouts</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-violet" data-progress="85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Development -->
+          <div class="skill-category glass scroll-reveal">
+            <div class="category-header">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <h3>Mobile Development</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Flutter & Dart (Cross-Platform)</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-teal" data-progress="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Android SDK (Java Native)</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-teal" data-progress="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & Tools -->
+          <div class="skill-category glass scroll-reveal">
+            <div class="category-header">
+              <i class="fa-solid fa-wrench"></i>
+              <h3>Database & Tools</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>MySQL / SQL Query Design</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-violet" data-progress="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Git & GitHub (Version Control)</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-violet" data-progress="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Postman (API Testing)</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-violet" data-progress="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>IDEs (IntelliJ, Android Studio, VS Code)</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill progress-violet" data-progress="95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-subtitle text-center">Explore my flagship enterprise software development project</p>
+        
+        <div class="project-showcase glass scroll-reveal">
+          <div class="project-showcase-header">
+            <div class="project-brand">
+              <span class="project-badge">Flagship App</span>
+              <h3>Nirapod Tax Management System</h3>
+            </div>
+            <div class="repo-links">
+              <a href="https://github.com/abdulmmh" target="_blank" rel="noopener noreferrer" class="btn-repo" title="Monorepo">
+                <i class="fa-brands fa-github"></i> Monorepo
+              </a>
+              <a href="https://github.com/abdulmmh" target="_blank" rel="noopener noreferrer" class="btn-repo" title="Backend">
+                <i class="fa-solid fa-gears"></i> Backend
+              </a>
+              <a href="https://github.com/abdulmmh" target="_blank" rel="noopener noreferrer" class="btn-repo" title="Frontend">
+                <i class="fa-solid fa-code"></i> Frontend
+              </a>
+              <a href="https://github.com/abdulmmh" target="_blank" rel="noopener noreferrer" class="btn-repo" title="Android App">
+                <i class="fa-solid fa-mobile-screen-button"></i> Android
+              </a>
+            </div>
+          </div>
+
+          <div class="project-showcase-grid">
+            <div class="project-description-side">
+              <p class="project-text">
+                Nirapod is a comprehensive enterprise-level tax administration platform designed to digitize taxpayer management, income tax returns, VAT administration, audits, appeals, notices, payments, reporting, and administrative workflows.
+              </p>
+              
+              <h4>Key Features & Capabilities:</h4>
+              <ul class="project-features-list">
+                <li><i class="fa-solid fa-check text-gradient"></i> <strong>Taxpayer Registration & Mgmt:</strong> Unique registration and profile administration.</li>
+                <li><i class="fa-solid fa-check text-gradient"></i> <strong>Income Tax & VAT Returns:</strong> Automated filing and processing of returns.</li>
+                <li><i class="fa-solid fa-check text-gradient"></i> <strong>Audit & Appeal Systems:</strong> Complete dispute and workflow management.</li>
+                <li><i class="fa-solid fa-check text-gradient"></i> <strong>RBAC (Role-Based Access Control):</strong> Granular permissions for admins, agents, taxpayers.</li>
+                <li><i class="fa-solid fa-check text-gradient"></i> <strong>Secure Payments & Notices:</strong> Payment integrations and notification channels.</li>
+                <li><i class="fa-solid fa-check text-gradient"></i> <strong>Reporting & Analytics:</strong> Visual data representation and report exporting.</li>
+              </ul>
+
+              <div class="tech-stack-badges">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Angular</span>
+                <span>Android (Java)</span>
+                <span>Flutter</span>
+                <span>MySQL</span>
+                <span>JWT Security</span>
+              </div>
+            </div>
+
+            <!-- Tabbed Media Showcase -->
+            <div class="project-media-side">
+              <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="angular-web">Angular Web Portal</button>
+                <button class="tab-btn" data-tab="dashboard">Dashboard Screen</button>
+                <button class="tab-btn" data-tab="android-app">Android/Flutter App</button>
+              </div>
+
+              <div class="tabs-content">
+                <div class="tab-panel active" id="angular-web">
+                  <div class="mockup-frame">
+                    <div class="browser-header">
+                      <span class="browser-dot dot-red"></span>
+                      <span class="browser-dot dot-yellow"></span>
+                      <span class="browser-dot dot-green"></span>
+                      <span class="browser-url">https://nirapod-tax.gov.bd/portal</span>
+                    </div>
+                    <img src="assets/nirapod-web.png?v=2" alt="Nirapod Angular Web Portal UI Dashboard Mockup" class="mockup-image">
+                  </div>
+                </div>
+
+                <div class="tab-panel" id="dashboard">
+                  <div class="mockup-frame">
+                    <div class="browser-header">
+                      <span class="browser-dot dot-red"></span>
+                      <span class="browser-dot dot-yellow"></span>
+                      <span class="browser-dot dot-green"></span>
+                      <span class="browser-url">https://nirapod-tax.gov.bd/admin/dashboard</span>
+                    </div>
+                    <img src="assets/nirapod-dash.png?v=2" alt="Nirapod Tax Dashboard Administrative Analytics Mockup" class="mockup-image">
+                  </div>
+                </div>
+
+                <div class="tab-panel" id="android-app">
+                  <div class="phone-mockup-frame">
+                    <div class="phone-speaker"></div>
+                    <div class="phone-screen-container">
+                      <img src="assets/nirapod-mobile-1.png?v=2" alt="Nirapod Mobile Tax App Android/Flutter Mockup" class="phone-mockup-image active" id="phone-img-1">
+                      <img src="assets/nirapod-mobile-2.png?v=2" alt="Nirapod Mobile Tax App Android/Flutter Mockup" class="phone-mockup-image" id="phone-img-2">
+                    </div>
+                    <div class="phone-button" id="phone-home-btn" title="Click home button to change screen"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Achievements Section -->
+    <section id="achievements" class="achievements section-padding">
+      <div class="container">
+        <div class="dual-grid">
+          <!-- Experience Card -->
+          <div class="experience-card-wrapper glass scroll-reveal">
+            <h2 class="section-title text-left">My <span class="text-gradient">Experience</span></h2>
+            <div class="experience-list">
+              <div class="experience-item">
+                <span class="exp-badge">Full-Stack Development</span>
+                <h3>Personal Projects & Software Development</h3>
+                <p class="exp-date">2024 - Present</p>
+                <p class="exp-desc">
+                  Developed production-grade web and mobile applications using Spring Boot, Angular, Android, Flutter, and MySQL. Implemented architectural patterns such as Layered Architecture (Controller-Service-Repository), Dependency Injection, State Management, and Secure Routing.
+                </p>
+                <ul class="exp-bullets">
+                  <li>Designed robust REST APIs containing JWT token authentication and secure endpoints.</li>
+                  <li>Created responsive, state-managed frontend components utilizing Angular.</li>
+                  <li>Configured database structures, optimized MySQL queries, and built entity relationships.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievements Card -->
+          <div class="achievements-card-wrapper glass scroll-reveal">
+            <h2 class="section-title text-left">Key <span class="text-gradient">Achievements</span></h2>
+            <ul class="achievements-list">
+              <li>
+                <div class="achievement-icon"><i class="fa-solid fa-award"></i></div>
+                <div class="achievement-text">
+                  <h4>End-to-End Enterprise Architecture</h4>
+                  <p>Built the <strong>Nirapod Tax Management System</strong>, bridging desktop web portals with mobile (Android/Flutter) application endpoints.</p>
+                </div>
+              </li>
+              <li>
+                <div class="achievement-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="achievement-text">
+                  <h4>Securing Enterprise Workflows</h4>
+                  <p>Constructed JWT authentication filters and role-based path permissions in Spring Boot to support multi-stakeholder structures.</p>
+                </div>
+              </li>
+              <li>
+                <div class="achievement-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="achievement-text">
+                  <h4>Professional Certification</h4>
+                  <p>Successfully completed the high-demand, fully-funded <strong>ISDB-BISEW IT Scholarship Programme (Round 68)</strong> for Web & Mobile Development.</p>
+                </div>
+              </li>
+              <li>
+                <div class="achievement-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="achievement-text">
+                  <h4>Mathematical Optimization</h4>
+                  <p>Leveraged analytical skills from my B.Sc. in Mathematics to optimize query runtime structures and algorithm time complexity.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section id="github" class="github section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">GitHub <span class="text-gradient">Activity</span></h2>
+        <p class="section-subtitle text-center">Visualizing development patterns, language distributions, and contribution history</p>
+
+        <div class="github-dashboard glass scroll-reveal">
+          <div class="github-profile-header">
+            <div class="github-avatar-info">
+              <div class="github-icon-circle"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <h3>Abdul Mannan Mahadi</h3>
+                <a href="https://github.com/abdulmmh" target="_blank" rel="noopener noreferrer" class="github-handle">
+                  @abdulmmh <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="github-stats-summary">
+              <div class="git-stat">
+                <span class="git-stat-val">24</span>
+                <span class="git-stat-lbl">Repositories</span>
+              </div>
+              <div class="git-stat">
+                <span class="git-stat-val">1,248</span>
+                <span class="git-stat-lbl">Commits</span>
+              </div>
+              <div class="git-stat">
+                <span class="git-stat-val">87</span>
+                <span class="git-stat-lbl">Pull Requests</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="github-details-grid">
+            <!-- Simulated Contribution Graph -->
+            <div class="contribution-card">
+              <h4>Contributions in the last year</h4>
+              <div class="contribution-graph-container">
+                <div class="contribution-scroll-wrapper">
+                  <div class="contribution-grid" id="github-contrib-grid">
+                    <!-- Javascript will generate this grid dynamically -->
+                  </div>
+                </div>
+                <div class="contribution-legend">
+                  <span>Less</span>
+                  <div class="legend-box level-0"></div>
+                  <div class="legend-box level-1"></div>
+                  <div class="legend-box level-2"></div>
+                  <div class="legend-box level-3"></div>
+                  <div class="legend-box level-4"></div>
+                  <span>More</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technology Usage Chart -->
+            <div class="tech-usage-card">
+              <h4>Primary Technology Usage</h4>
+              <div class="chart-wrapper">
+                <div class="tech-progress-list">
+                  <div class="tech-progress-item">
+                    <div class="tech-label">
+                      <span>Java (Spring Boot)</span>
+                      <span>40%</span>
+                    </div>
+                    <div class="tech-bar-bg"><div class="tech-bar-fill fill-java" style="width: 40%"></div></div>
+                  </div>
+                  <div class="tech-progress-item">
+                    <div class="tech-label">
+                      <span>TypeScript (Angular)</span>
+                      <span>25%</span>
+                    </div>
+                    <div class="tech-bar-bg"><div class="tech-bar-fill fill-ts" style="width: 25%"></div></div>
+                  </div>
+                  <div class="tech-progress-item">
+                    <div class="tech-label">
+                      <span>Dart (Flutter)</span>
+                      <span>20%</span>
+                    </div>
+                    <div class="tech-bar-bg"><div class="tech-bar-fill fill-dart" style="width: 20%"></div></div>
+                  </div>
+                  <div class="tech-progress-item">
+                    <div class="tech-label">
+                      <span>SQL (MySQL)</span>
+                      <span>10%</span>
+                    </div>
+                    <div class="tech-bar-bg"><div class="tech-bar-fill fill-sql" style="width: 10%"></div></div>
+                  </div>
+                  <div class="tech-progress-item">
+                    <div class="tech-label">
+                      <span>HTML5 / CSS3</span>
+                      <span>5%</span>
+                    </div>
+                    <div class="tech-bar-bg"><div class="tech-bar-fill fill-web" style="width: 5%"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">Get In <span class="text-gradient">Touch</span></h2>
+        <p class="section-subtitle text-center">Whether you are looking to hire a Full Stack Developer or want to discuss enterprise systems, drop a line!</p>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Column -->
+          <div class="contact-info-column glass scroll-reveal">
+            <h3>Contact Information</h3>
+            <p class="contact-intro-text">
+              I am actively seeking Junior Full Stack Developer opportunities and technical roles. Feel free to connect via mail or LinkedIn.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="detail-text">
+                  <span>Mail Me</span>
+                  <a href="mailto:abdulmannanmahadi@gmail.com">abdulmannanmahadi@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="detail-text">
+                  <span>Current Location</span>
+                  <p>Dhaka, Bangladesh</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="detail-text">
+                  <span>LinkedIn Professional Network</span>
+                  <a href="https://www.linkedin.com/in/mahadi-hasan-543baa38b/" target="_blank" rel="noopener noreferrer">Abdul Mannan Mahadi</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="detail-text">
+                  <span>Git Repository Workspace</span>
+                  <a href="https://github.com/abdulmmh" target="_blank" rel="noopener noreferrer">github.com/abdulmmh</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-cv-card">
+              <h4>Need an offline CV / Resume?</h4>
+              <p>Download a clean, printer-friendly PDF copy detailing my systems and training experience.</p>
+              <a href="assets/cv-abdul-mannan-mahadi.pdf" class="btn btn-primary" download>
+                <i class="fa-solid fa-file-pdf"></i> Download PDF CV
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-column glass scroll-reveal">
+            <h3>Send Message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <input type="text" id="name" name="name" class="form-control" required placeholder=" ">
+                <label for="name" class="form-label">Full Name</label>
+                <span class="error-msg">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="email" name="email" class="form-control" required placeholder=" ">
+                <label for="email" class="form-label">Email Address</label>
+                <span class="error-msg">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" id="subject" name="subject" class="form-control" required placeholder=" ">
+                <label for="subject" class="form-label">Subject</label>
+                <span class="error-msg">Please specify a subject</span>
+              </div>
+
+              <div class="form-group">
+                <textarea id="message" name="message" class="form-control" rows="5" required placeholder=" "></textarea>
+                <label for="message" class="form-label">Your Message</label>
+                <span class="error-msg">Please enter your message details</span>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+            
+            <!-- Success/Error Notification -->
+            <div class="form-status" id="form-status">
+              <div class="status-content">
+                <i class="status-icon"></i>
+                <div class="status-message">
+                  <h4 class="status-title"></h4>
+                  <p class="status-desc"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">
+          <span>&lt;</span>Mahadi<span>/&gt;</span>
+        </a>
+        <p>Full Stack Developer specializing in Java, Spring Boot, Angular, Android, and Flutter.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <h4>Connect</h4>
+        <div class="footer-social-icons">
+          <a href="https://github.com/abdulmmh" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mahadi-hasan-543baa38b/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:abdulmannanmahadi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Abdul Mannan Mahadi. All rights reserved.</p>
+      <p class="footer-tagline">Crafted with precision & passion | Dhaka, BD</p>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
