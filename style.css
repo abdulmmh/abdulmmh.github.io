@@ -815,45 +815,35 @@ img {
   font-size: 1.35rem;
 }
 
-.skill-list {
+.skill-tags {
   display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
 
-.skill-item {
-  width: 100%;
-}
-
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.6rem;
+.skill-tag {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
   font-size: 0.95rem;
-  font-weight: 550;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: var(--transition-smooth);
+  cursor: default;
 }
 
-.skill-bar-bg {
-  width: 100%;
-  height: 8px;
-  background-color: var(--bg-tertiary);
-  border-radius: 4px;
-  overflow: hidden;
+.skill-tag:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--accent-teal);
+  color: var(--text-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.15);
 }
 
-.skill-bar-fill {
-  width: 0%;
-  height: 100%;
-  border-radius: 4px;
-  transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.skill-bar-fill.progress-teal {
-  background: linear-gradient(to right, var(--bg-tertiary), var(--accent-teal));
-}
-
-.skill-bar-fill.progress-violet {
-  background: linear-gradient(to right, var(--bg-tertiary), var(--accent-violet));
+.skill-category:nth-child(even) .skill-tag:hover {
+  border-color: var(--accent-violet);
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.15);
 }
 
 /* --- Featured Projects Showcase --- */

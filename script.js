@@ -147,10 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // =========================================================================
-  // 5. Scroll Reveal & Skill Progress Animations
+  // 5. Scroll Reveal
   // =========================================================================
   const scrollElements = document.querySelectorAll('.scroll-reveal');
-  const skillFills = document.querySelectorAll('.skill-bar-fill');
 
   // Intersection Observer for scroll triggers
   const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -167,23 +166,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   scrollElements.forEach(el => {
     revealObserver.observe(el);
-  });
-
-  // Specifically animate skill bars when they scroll into view
-  const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const fill = entry.target;
-        const progress = fill.getAttribute('data-progress');
-        fill.style.width = progress;
-      }
-    });
-  }, {
-    threshold: 0.2
-  });
-
-  skillFills.forEach(fill => {
-    skillObserver.observe(fill);
   });
 
   // Fallback scroll reveal triggers if observer is not supported
@@ -270,6 +252,52 @@ document.addEventListener('DOMContentLoaded', () => {
       contribGrid.appendChild(cell);
     }
   }
+
+  // =========================================================================
+  // 7b. Dynamic GitHub Stats Fetch
+  // =========================================================================
+  async function fetchGitHubStats() {
+    const username = 'abdulmmh';
+    
+    const reposVal = document.getElementById('github-repos-count');
+    const commitsVal = document.getElementById('github-commits-count');
+    const prsVal = document.getElementById('github-prs-count');
+
+    try {
+      // 1. Fetch public repositories count
+      const profileRes = await fetch(`https://api.github.com/users/${username}`);
+      if (profileRes.ok) {
+        const profileData = await profileRes.json();
+        if (reposVal && profileData.public_repos !== undefined) {
+          reposVal.textContent = profileData.public_repos;
+        }
+      }
+
+      // 2. Fetch total commits by this author
+      const commitsRes = await fetch(`https://api.github.com/search/commits?q=author:${username}`, {
+        headers: { 'Accept': 'application/vnd.github.cloak-preview' }
+      });
+      if (commitsRes.ok) {
+        const commitsData = await commitsRes.json();
+        if (commitsVal && commitsData.total_count !== undefined) {
+          commitsVal.textContent = commitsData.total_count.toLocaleString();
+        }
+      }
+
+      // 3. Fetch total pull requests by this author
+      const prsRes = await fetch(`https://api.github.com/search/issues?q=author:${username}+type:pr`);
+      if (prsRes.ok) {
+        const prsData = await prsRes.json();
+        if (prsVal && prsData.total_count !== undefined) {
+          prsVal.textContent = prsData.total_count.toLocaleString();
+        }
+      }
+    } catch (error) {
+      console.warn('Could not fetch dynamic GitHub stats, using hardcoded fallback values.', error);
+    }
+  }
+
+  fetchGitHubStats();
 
 
   // =========================================================================
